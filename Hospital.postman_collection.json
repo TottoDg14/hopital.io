@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "ddb76fa9-ec69-499a-bbb2-e22c42a7779e",
+		"name": "Hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://hospital.io/api/usuario/create.php?rol_id=2&nombre=Carlos Martinez&correo=cmartinez@hospital.com",
+					"protocol": "http",
+					"host": [
+						"hospital",
+						"io"
+					],
+					"path": [
+						"api",
+						"usuario",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "rol_id",
+							"value": "2"
+						},
+						{
+							"key": "nombre",
+							"value": "Carlos Martinez"
+						},
+						{
+							"key": "correo",
+							"value": "cmartinez@hospital.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cita",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://hospital.io/api/cita/create.php?paciente=margalvarado@live.com&responsable=rtorres@hospital.com&fecha=2022-02-20 16:00:00",
+					"protocol": "http",
+					"host": [
+						"hospital",
+						"io"
+					],
+					"path": [
+						"api",
+						"cita",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "paciente",
+							"value": "margalvarado@live.com"
+						},
+						{
+							"key": "responsable",
+							"value": "rtorres@hospital.com"
+						},
+						{
+							"key": "fecha",
+							"value": "2022-02-20 16:00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmar Cita",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://hospital.io/api/cita/update.php?correlativo=NC10000&responsable=rtorres@hospital.com&estatus=0",
+					"protocol": "http",
+					"host": [
+						"hospital",
+						"io"
+					],
+					"path": [
+						"api",
+						"cita",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "correlativo",
+							"value": "NC10000"
+						},
+						{
+							"key": "responsable",
+							"value": "rtorres@hospital.com"
+						},
+						{
+							"key": "estatus",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Citas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://hospital.io/api/cita/read.php?responsable=rtorres@hospital.com",
+					"protocol": "http",
+					"host": [
+						"hospital",
+						"io"
+					],
+					"path": [
+						"api",
+						"cita",
+						"read.php"
+					],
+					"query": [
+						{
+							"key": "responsable",
+							"value": "rtorres@hospital.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
