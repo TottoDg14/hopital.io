@@ -1,0 +1,20 @@
+{
+    "name": "totto/hopital.io",
+    "description": "Hospital API",
+    "type": "api",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "model/",
+            "Api\\": "api/",
+            "Config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TottoDg14",
+            "email": "davidmarsant@gmail.com"
+        }
+    ],
+    "require": {}
+}

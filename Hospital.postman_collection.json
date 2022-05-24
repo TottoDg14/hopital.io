@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "ddb76fa9-ec69-499a-bbb2-e22c42a7779e",
 		"name": "Hospital",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17592023"
 	},
 	"item": [
 		{
@@ -11,16 +12,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://hospital.io/api/usuario/create.php?rol_id=2&nombre=Carlos Martinez&correo=cmartinez@hospital.com",
+					"raw": "http://hospital.io/usuario/create?rol_id=2&nombre=Carlos Martinez&correo=cmartinez@hospital.coma",
 					"protocol": "http",
 					"host": [
 						"hospital",
 						"io"
 					],
 					"path": [
-						"api",
 						"usuario",
-						"create.php"
+						"create"
 					],
 					"query": [
 						{
@@ -33,7 +33,7 @@
 						},
 						{
 							"key": "correo",
-							"value": "cmartinez@hospital.com"
+							"value": "cmartinez@hospital.coma"
 						}
 					]
 				}
@@ -46,16 +46,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://hospital.io/api/cita/create.php?paciente=margalvarado@live.com&responsable=rtorres@hospital.com&fecha=2022-02-20 16:00:00",
+					"raw": "http://hospital.io/cita/create?paciente=margalvarado@live.com&responsable=rtorres@hospital.com&fecha=2022-02-20 16:00:00",
 					"protocol": "http",
 					"host": [
 						"hospital",
 						"io"
 					],
 					"path": [
-						"api",
 						"cita",
-						"create.php"
+						"create"
 					],
 					"query": [
 						{
@@ -81,21 +80,20 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://hospital.io/api/cita/update.php?correlativo=NC10000&responsable=rtorres@hospital.com&estatus=0",
+					"raw": "http://hospital.io/cita/confirm?correlativo=NC10006&responsable=rtorres@hospital.com&estatus=0",
 					"protocol": "http",
 					"host": [
 						"hospital",
 						"io"
 					],
 					"path": [
-						"api",
 						"cita",
-						"update.php"
+						"confirm"
 					],
 					"query": [
 						{
 							"key": "correlativo",
-							"value": "NC10000"
+							"value": "NC10006"
 						},
 						{
 							"key": "responsable",
@@ -116,16 +114,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://hospital.io/api/cita/read.php?responsable=rtorres@hospital.com",
+					"raw": "http://hospital.io/cita/read?responsable=rtorres@hospital.com",
 					"protocol": "http",
 					"host": [
 						"hospital",
 						"io"
 					],
 					"path": [
-						"api",
 						"cita",
-						"read.php"
+						"read"
 					],
 					"query": [
 						{

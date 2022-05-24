@@ -1,6 +1,6 @@
 <?php 
 
-include_once(dirname(__DIR__) . '/model/X_Cita.php');
+namespace Model;
 
 class Cita extends X_Cita {
 

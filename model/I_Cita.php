@@ -1,5 +1,7 @@
 <?php 
 
+namespace Model;
+
 interface I_Cita {
     public function getCitaId(): int;
 

@@ -1,5 +1,7 @@
 <?php 
 
+namespace Model;
+
 interface I_Usuario {
     public function getUsuarioId(): int;
 

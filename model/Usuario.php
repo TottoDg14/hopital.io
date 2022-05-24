@@ -1,6 +1,6 @@
 <?php 
 
-include_once(dirname(__DIR__) . '/model/X_Usuario.php');
+namespace Model;
 
 class Usuario extends X_Usuario {
 

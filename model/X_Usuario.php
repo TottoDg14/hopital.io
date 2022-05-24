@@ -1,21 +1,21 @@
 <?php
-include_once(dirname(__DIR__) . '/model/Base.php');
-include_once(dirname(__DIR__) . '/model/I_Usuario.php');
+
+namespace Model;
 
 class X_Usuario extends Base implements I_Usuario {
     public $_table = 'usuario';
   
-    private int $usuario_id = 0;
+    private $usuario_id = 0;
   
-    private int $rol_id = 0;
+    private $rol_id = 0;
   
-    private string $nombre;
+    private $nombre;
   
-    private string $correo;
+    private $correo;
   
-    private string $fecha;
+    private $fecha;
   
-    private int $estatus;
+    private $estatus;
 
     public function getUsuarioId(): int 
     {

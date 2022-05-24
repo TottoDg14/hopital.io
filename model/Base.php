@@ -1,6 +1,7 @@
 <?php
+namespace Model;
 
-include_once(dirname(__DIR__) . '/config/Database.php');
+use Config\Database;
 
 class Base {
 

@@ -1,21 +1,21 @@
 <?php
-include_once(dirname(__DIR__) . '/model/Base.php');
-include_once(dirname(__DIR__) . '/model/I_Cita.php');
+
+namespace Model;
 
 class X_Cita extends Base implements I_Cita {
     public $_table = 'cita';
   
-    private int $cita_id = 0;
+    private $cita_id = 0;
   
-    private int $paciente_id = 0;
+    private $paciente_id = 0;
 
-    private int $responsable_id = 0;
+    private $responsable_id = 0;
 
-    private string $correlativo;
+    private $correlativo;
   
-    private string $fecha;
+    private $fecha;
   
-    private int $estatus;
+    private $estatus;
 
     public function getCitaId(): int 
     {

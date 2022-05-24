@@ -1,5 +1,10 @@
 <?php 
 
+namespace Config;
+
+use PDO;
+use PDOException;
+
 class Database {
 
   // Conexion a Base de Datos
